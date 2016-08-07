@@ -18,22 +18,30 @@
 
 <body>
     <div class="header">
-      <div class="headerimage"><img src="moon.png"></div>
-      <div class="title"><h1 class="nightView">Game of Hounds
-      <br>based on ultimate werewolf</h1></div>
+        <div id="headerImage"><img src="moon.png"></div>
+        <div class="title">
+            <h1 class="nightView">Game of Hounds</h1>
+            <p class="nightView">based on ultimate werewolf</p>
+        </div>
     </div>
 
-    <!-- cloud-->
-    <!--
-    <div id="cloud">
-        <img src="img/cloud.png" height="40" width="40"/>
-    </div>
-  -->
+    <div id="screen">
+        <div id = "cloudOne" class="cloud"><img src="img/cloud.png"></div>
+        <div id = "cloudThree" class="cloud"><img src="img/cloud.png"></div>
+        <div id = "cloudTwo" class="cloud"><img src="img/cloud.png"></div>
+      </div>
     <div id="content">
       <!-- where everything is -->
     </div>
     <!--buttons for now until we get data-->
-    <input type="button" onclick="addEntry('mason')" value="Add Mason">
-    <input type="button" onclick="addEntry('werewolf')" value="Add werewolf">
-    <input type="button" onclick="dayChange()" value="Change Day">
+    <div id="role_list">
+        
+    </div>
+    <div>
+        <input type="button" onclick="addEntry('mason')" value="Add Mason">
+        <input type="button" onclick="addEntry('werewolf')" value="Add werewolf">
+        <input type="button" onclick="dayChange()" value="Change Day">
+        <input type="button" onclick="showRoles()" value="Show Roles">
+    </div>
+
 </body>

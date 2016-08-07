@@ -11,11 +11,26 @@
     width:50%;
     margin:0 auto;
 }
-#cloud{
-    position:absolute;
-    z-index:-1;
-    left:0px;
-    top:10px;
+#screen {
+  width:100%;
+}
+
+.cloud{
+  position:absolute;
+}
+
+#cloudOne {
+  left:0px;
+}
+
+#cloudTwo {
+  top:0px;
+  left:-500px;
+}
+
+#cloudThree {
+  top: 50px;
+  left: -100px;
 }
 .night{
     color:#fff;
@@ -31,7 +46,7 @@
 }
 .entries{
     width:100%;
-    margin:100px 0px;
+    margin:10% 0px;
 }
 .entries div *{
     display:inline-block;
@@ -55,11 +70,19 @@
 .entries .comments{
     width:60%;
 }
-#cloud{
+.cloud{
     position:absolute;
     z-index:-1;
     left:0px;
     top:10px;
+}
+.cloud img{
+    height:50px;
+    width:50px;
+}
+h4{
+    font-family:"Mohave";
+    font-size:28px;
 }
 p{
     font-family:"Mohave";
@@ -85,33 +108,60 @@ h1{
     padding:30px 20px;
 }
 body{
-    background-image: url('day-background.png');
+    background-image: url('night-background.png');
     background-repeat: repeat-x;
-    background-color:#deffff;
+    background-color:#02023d;
     overflow-x:hidden;
     text-align:center;
 }
 
 .nightView{
-    color:#fff;
+    color:#ffc73f;
 }
 .header *{
   top:0px;
   display:inline-block;
 }
-.header .headerimage {
-   /*float:left;
-   margin-left:100px;
-   position:relative;
-   */
+.header #headerImage {
    width:30%;
 }
-
+.header #headerImage img{
+    width:185px;
+    height:185px;
+}
 .header .title {
-  /*float:right;
-  margin-right:100px;*/
-  float:right;
-  margin-top:5%;
+  margin-top:1%;
   width:65%;
-
+  text-align:left;
+  vertical-align: top;
+}
+.header .title h1{
+    margin-bottom:0px;
+}
+.header .title p{
+    margin:0px;
+    
+}
+.roleList{
+    list-style-type:none;
+    width:60%;
+    margin: 0 auto;
+}
+.roleList li{
+    width:100%;
+    padding-left:0px;
+}
+.roleList li:nth-child(2n){
+    background-color:rgba(100,100,100,0.5);
+}
+.roleList li div{
+    width:30%;
+    display:inline-block;
+    vertical-align:top;
+}
+.roleList li div p{
+    margin-left:10px;
+}
+.roleList li div h4{
+    padding:0px 5%;
 }
