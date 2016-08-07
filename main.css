@@ -10,51 +10,69 @@
     width:60%;
     margin:0 auto;
 }
-  .night{
+.night{
     color:black;
     background-color:rgba(100,100,100,0.4);
     /* color is gray just to see the difference between night/day for now*/
     /* also, need to find nice color scheme */
-  }
-  .day{
+}
+.day{
     color:orange;
     background-color:yellow;
-  }
-  .entries{
+}
+.entries{
     width:100%;
     margin:50px 0px;
-  }
-  .entries div *{
+}
+.entries div *{
     display:inline-block;
     padding:10px;
     margin:0px;
     vertical-align:top;
-  }
-  .entries *{
-      height:100%;
-      display:inline-block;
-  }
-  .entries .image img{
+}
+.entries *{
+    height:100%;
+    display:inline-block;
+}
+.entries .image img{
     width:107px;
     height:140px;
-  }
-  .entries .image{
-      padding:15px;
-      width:20%;
-  }
-  .entries .comments{
-      width:70%;
-  }
-  p{
+    border-radius:25.5px;
+}
+.entries .image{
+    padding:15px 0px 15px 15px;
+    width:20%;
+}
+.entries .comments{
+    width:74%;  
+    margin-left:15px;
+}
+p{
     font-family:"Mohave";
     font-size:24px;
-  }
-  h1{
+}
+h1{
     font-family:"Bigmouth";
     font-size:42px;
-  }
-  .header{
+}
+.header{
     text-align:center;
     margin:0 auto;
     width:55%;
-  }
+}
+.dayChange{
+    margin:50px 0px;
+    text-align:center;
+    width:100%;
+}
+.dayChange p{
+    padding:30px 20px;
+}
+body{
+    /*thank you calthyechild from deviantart but we will not use you, this is just an example*/
+    background-image:url('http://img11.deviantart.net/2179/i/2013/195/d/5/dark_forest_by_calthyechild-d6dixhs.jpg');
+}
+
+.nightView{
+    color:orange;
+}
