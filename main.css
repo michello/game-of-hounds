@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Bigmouth';
+    src: url('bigmouth.otf');
+}
+@font-face {
+    font-family: 'Mohave';
+    src: url('Mohave.otf');
+}
+#content{
+    width:60%;
+    margin:0 auto;
+}
+  .night{
+    color:black;
+    background-color:rgba(100,100,100,0.4);
+    /* color is gray just to see the difference between night/day for now*/
+    /* also, need to find nice color scheme */
+  }
+  .day{
+    color:orange;
+    background-color:yellow;
+  }
+  .entries{
+    width:100%;
+    margin:50px 0px;
+  }
+  .entries div *{
+    display:inline-block;
+    padding:10px;
+    margin:0px;
+    vertical-align:top;
+  }
+  .entries *{
+      height:100%;
+      display:inline-block;
+  }
+  .entries .image img{
+    width:107px;
+    height:140px;
+  }
+  .entries .image{
+      padding:15px;
+      width:20%;
+  }
+  .entries .comments{
+      width:70%;
+  }
+  p{
+    font-family:"Mohave";
+    font-size:24px;
+  }
+  h1{
+    font-family:"Bigmouth";
+    font-size:42px;
+  }
+  .header{
+    text-align:center;
+    margin:0 auto;
+    width:55%;
+  }
