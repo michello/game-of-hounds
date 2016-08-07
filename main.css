@@ -10,6 +10,12 @@
     width:60%;
     margin:0 auto;
 }
+#cloud{
+position:absolute;
+z-index:-1;
+right:0px;
+top:10px;
+}
 .night{
     color:black;
     background-color:rgba(100,100,100,0.4);
