@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
     function loop() {
-        $('#cloud').css({right:0});
+        $('#cloud').css({left:0});
         $('#cloud').animate ({
-            right: '+1400',
-        }, 6000, 'linear', function() {
+            left: '2000',
+        }, 10000, 'linear', function() {
             loop();
         });
     }

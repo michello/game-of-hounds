@@ -13,7 +13,7 @@
 #cloud{
 position:absolute;
 z-index:-1;
-right:0px;
+left:0px;
 top:10px;
 }
 .night{
