@@ -1,0 +1,28 @@
+body {
+  background-image: url("img/morning-background.png");
+  background-repeat: repeat-x;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+#screen {
+  width:100%;
+}
+
+.cloud{
+  position:absolute;
+}
+
+#cloudOne {
+  left:0px;
+}
+
+#cloudTwo {
+  top:0px;
+  left:-500px;
+}
+
+#cloudThree {
+  top: 50px;
+  left: -100px;
+}
