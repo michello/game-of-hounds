@@ -6,29 +6,32 @@
     font-family: 'Mohave';
     src: url('Mohave.otf');
 }
+
 #content{
-    width:60%;
+    width:50%;
     margin:0 auto;
 }
 #cloud{
-position:absolute;
-z-index:-1;
-left:0px;
-top:10px;
+    position:absolute;
+    z-index:-1;
+    left:0px;
+    top:10px;
 }
 .night{
-    color:black;
-    background-color:rgba(100,100,100,0.4);
+    color:#fff;
+    background-color:rgba(47,47,62,0.6);
+    font-size: 36px;
+
     /* color is gray just to see the difference between night/day for now*/
     /* also, need to find nice color scheme */
 }
 .day{
-    color:orange;
-    background-color:yellow;
+    color:#000;
+    background-color:rgba(255,255,255,0.8);
 }
 .entries{
     width:100%;
-    margin:50px 0px;
+    margin:100px 0px;
 }
 .entries div *{
     display:inline-block;
@@ -46,28 +49,35 @@ top:10px;
     border-radius:25.5px;
 }
 .entries .image{
-    padding:15px 0px 15px 15px;
-    width:20%;
+    padding:15px;
+    width:35%;
 }
 .entries .comments{
-    width:74%;  
-    margin-left:15px;
+    width:60%;
+}
+#cloud{
+    position:absolute;
+    z-index:-1;
+    left:0px;
+    top:10px;
 }
 p{
     font-family:"Mohave";
     font-size:24px;
 }
 h1{
+    color:black;
     font-family:"Bigmouth";
-    font-size:42px;
+    font-size:40px;
 }
 .header{
     text-align:center;
     margin:0 auto;
     width:55%;
+    vertical-align: top;
 }
 .dayChange{
-    margin:50px 0px;
+    margin:30px 0px;
     text-align:center;
     width:100%;
 }
@@ -75,10 +85,33 @@ h1{
     padding:30px 20px;
 }
 body{
-    /*thank you calthyechild from deviantart but we will not use you, this is just an example*/
-    background-image:url('http://img11.deviantart.net/2179/i/2013/195/d/5/dark_forest_by_calthyechild-d6dixhs.jpg');
+    background-image: url('day-background.png');
+    background-repeat: repeat-x;
+    background-color:#deffff;
+    overflow-x:hidden;
+    text-align:center;
 }
 
 .nightView{
-    color:orange;
+    color:#fff;
+}
+.header *{
+  top:0px;
+  display:inline-block;
+}
+.header .headerimage {
+   /*float:left;
+   margin-left:100px;
+   position:relative;
+   */
+   width:30%;
+}
+
+.header .title {
+  /*float:right;
+  margin-right:100px;*/
+  float:right;
+  margin-top:5%;
+  width:65%;
+
 }

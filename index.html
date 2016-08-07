@@ -11,23 +11,29 @@
 
     <!-- Javascript -->
     <script src="main.js"></script>
-	<script src="cloudmovement.js"></script>
+    <script src="cloudmovement.js"></script>
 
     <!-- just writing style here for now then ill move it into main.css -->
-    </head>
+</head>
 
-    <body>
-    <!-- logo -->
+<body>
     <div class="header">
-      <h1 class="nightView">Game of Hounds</h1>
+      <div class="headerimage"><img src="moon.png"></div>
+      <div class="title"><h1 class="nightView">Game of Hounds
+      <br>based on ultimate werewolf</h1></div>
     </div>
-	<!-- cloud-->
-	<div id="cloud"><img src="img/cloud.png" height="40" width="40"/>
-	</div>
+
+    <!-- cloud-->
+    <!--
+    <div id="cloud">
+        <img src="img/cloud.png" height="40" width="40"/>
+    </div>
+  -->
     <div id="content">
       <!-- where everything is -->
     </div>
     <!--buttons for now until we get data-->
-    <input type="button" onclick="addEntry('mason')" value="Click me">
-    <input type="button" onclick="dayChange()" value="Day has changed">
+    <input type="button" onclick="addEntry('mason')" value="Add Mason">
+    <input type="button" onclick="addEntry('werewolf')" value="Add werewolf">
+    <input type="button" onclick="dayChange()" value="Change Day">
 </body>

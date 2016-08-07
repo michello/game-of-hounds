@@ -12,8 +12,8 @@ function getIcon(role){
     return iconHtml;
 }
 function addEntry(role){
-    //timeOfDay will be either night or day
-    //text will be each person's text
+    //timeOfDay will be either "night" or "day"
+    //text will be each person's text or the game narrating the turns
     var timeOfDay = (isNight) ? "night" : "day";
     var text = "this person's turn is over";
     var entryHtml = (isImageLeft) ? '<div class="' + timeOfDay + ' entries"><div class="image">' + getIcon(role) + '</div><div class="comments"><p>' + text + '</p></div></div>' : '<div class="' + timeOfDay + ' entries"><div class="comments"><p>' + text + '</p></div><div class="image">' + getIcon(role) + '</div></div>';
@@ -29,7 +29,7 @@ function dayChange(){
     else{
         var changeDiv = '<div class="dayChange night"><p>It is night bruh</p></div>';
     }
-    
+
     $('#content').append(changeDiv);
     $('h1').each(function(){
         if(isNight){
@@ -47,15 +47,15 @@ function dayChange(){
             $(this).addClass("nightView");
         }
     });
-    console.log(isNight);
     isNight = !isNight;
     if(isNight){
-        $('body').css("background-image","url('http://img11.deviantart.net/2179/i/2013/195/d/5/dark_forest_by_calthyechild-d6dixhs.jpg'");
+        $('body').css("background-image","url(night-background.png)");
+        $('body').css("background-color","#02023d");
     }
     else{
     //    replace with ur backgrounds pls
-        $('body').css("background-image","none");
+        $('body').css("background-image","url(day-background.png)");
+        $('body').css("background-color","#deffff");
     }
     isImageLeft = true;
 }
-
